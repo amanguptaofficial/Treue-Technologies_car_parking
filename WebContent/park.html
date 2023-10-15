@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parking</title>
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin:0;
+    padding: 0;   
+   }
+ .container
+ {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ }
+ h2
+ {
+  text-align: center;
+  color:#333333;
+ }
+ form{
+  display: flex;
+  flex-direction: column;
+ }
+ label{
+  font-weight: bold;
+  margin-bottom: 8px;
+ }
+ input[type="text"],select,
+ input[type="number"]
+ {
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ }
+ select{
+margin-bottom: 16px;
+ }
+ input[type="number"]
+ {
+  width:100px;
+ }
+ input[type="submit"],
+ input[type="reset"] 
+ {
+ padding: 10px 20px;
+ background-color: #4CAD50;
+ color: white;
+ border: none;
+border-radius: 5px;
+cursor:pointer;
+font-size: 16px;
+margin-top: 10px;
+ }
+ input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    input[type="submit"]:focus,
+    input[type="reset"]:focus {
+      outline: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h2>Park Your Vehicle</h2>
+     <form action="park" id="parkingform">
+    <label for="VehicleNumber">Vehicle Number:</label>
+  <input type="text" id="VehicleNumber" name="vehicleNumber" required>
+
+  <label for="vehicleType">VehicleType:</label>
+<select name="vt" id="vehicleType" required>
+ <option value="car">Car</option>
+<option value="Motorcycle">MoterCycle</option>
+<option value="truck">Truck</option>
+<option value="van">Van</option> 
+<option value="other">Other</option>
+</select> 
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</form>
+
+</div>
+   
+</body>
+</html>

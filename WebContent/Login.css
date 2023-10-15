@@ -1,0 +1,65 @@
+body{
+  font-family: Arial, sans-serif;
+  background-image: url(images/parking\ images.jpeg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+
+}
+.login-form{
+  max-width:400px;
+  margin: 180px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.login-form h2
+{
+  text-align: center;
+  margin-bottom: 20px;
+}
+form{
+ display: flex;
+ flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"]
+{
+    padding:10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"],
+input[type="reset"]
+{
+ background-color: #45a049;
+ border:none;
+ padding: 10px;
+ border-radius: 5px;
+ font-weight: 100;
+}
+.form-button{
+  display: flex;
+  justify-content: space-between;
+}
+.register-forget
+{
+  text-align: center;
+  margin-top: 10px;
+}
+.register-forget a{
+    margin: 5px;
+    text-decoration: none;
+    color:#3498db;
+    
+}
+.register-forget a:hover{
+    text-decoration: underline;
+}
+
