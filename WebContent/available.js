@@ -1,7 +1,7 @@
 function selectSpot(spotNumber) {
     const spot = document.querySelector('.parking-grid').children[spotNumber - 1];
 
-    // Check if the spot is available before reserving it
+    // Check if the spot is available before reserving it ....
     if (spot.classList.contains('available')) {
         spot.classList.remove('available');
         spot.classList.add('selected');
