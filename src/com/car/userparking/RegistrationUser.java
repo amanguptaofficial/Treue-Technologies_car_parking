@@ -54,7 +54,7 @@ public class RegistrationUser extends HttpServlet {
 			String conPass = req.getParameter("conpassword");
 
 			// convert String date to Sql date:::
-			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+			SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy");
 			java.util.Date utildate = sdf.parse(dob);
 			long ms = utildate.getTime();
 			java.sql.Date sqldate = new java.sql.Date(ms);
